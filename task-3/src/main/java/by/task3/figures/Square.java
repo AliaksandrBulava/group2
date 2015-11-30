@@ -11,7 +11,7 @@ public class Square implements Figure{
         this.side = side;
     }
 
-    public double getArea() {
-        return side*side;
+    public double getSide() {
+        return side;
     }
 }

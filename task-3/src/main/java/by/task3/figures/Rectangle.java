@@ -13,7 +13,11 @@ public class Rectangle implements Figure {
         this.length = length;
     }
 
-    public double getArea() {
-        return height * length;
+    public double getHeight() {
+        return height;
+    }
+
+    public double getLength() {
+        return length;
     }
 }
