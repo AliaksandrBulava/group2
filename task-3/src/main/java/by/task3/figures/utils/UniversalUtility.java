@@ -8,7 +8,7 @@ import by.task3.figures.Square;
 /**
  * Created by Julia on 01.12.2015.
  */
-public class UniversalUtility {
+public class UniversalUtility implements Printer, Colculator{
 
     public double calculationArea(Figure figure) {
 
