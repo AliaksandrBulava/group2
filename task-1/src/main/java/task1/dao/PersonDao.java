@@ -1,4 +1,4 @@
-package task1.factory;
+package task1.dao;
 
 import task1.domain.Person;
 

@@ -1,12 +1,12 @@
-package task1.factory;
-
-import task1.dao.file.FilePersonDao;
-import task1.dao.db.DbPersonDao;
-import task1.dao.PersonDao;
+package modeule01.task1.factory;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
+
+import modeule01.task1.dao.PersonDao;
+import modeule01.task1.dao.db.DbPersonDao;
+import modeule01.task1.dao.file.FilePersonDao;
 
 /**
  * Created by Kiryl_Parfiankou on 12/14/2015.

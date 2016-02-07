@@ -1,5 +1,6 @@
-package task1.factory;
+package task1.dao.file;
 
+import task1.dao.PersonDao;
 import task1.domain.Person;
 
 import java.io.*;
@@ -9,9 +10,9 @@ import java.util.List;
 /**
  * Created by Kiryl_Parfiankou on 12/14/2015.
  */
-public class FilePersonDao implements PersonDao{
+public class FilePersonDao implements PersonDao {
 
-    private static final String DEVIDER = ",";
+    private static final String DIVIDER = ",";
 
     private String fileName;
     private List<Person> cache;
@@ -27,7 +28,7 @@ public class FilePersonDao implements PersonDao{
 
         try {
             Writer writer = new BufferedWriter(new FileWriter(fileName, true));
-            writer.append(person.toString());
+            writer.append("\n" + person);
             cache.add(person);
             writer.close();
 
@@ -102,7 +103,7 @@ public class FilePersonDao implements PersonDao{
 
     private Person convert(String line) {
 
-        String[] snippets = line.split(DEVIDER);
+        String[] snippets = line.split(DIVIDER);
         Person person = new Person(snippets[0], // name
                                    Integer.valueOf(snippets[1]), // age
                                    snippets[2]); // gender

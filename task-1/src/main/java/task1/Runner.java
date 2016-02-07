@@ -2,7 +2,7 @@ package task1;
 
 import task1.domain.Person;
 import task1.factory.PersonAbstractFactory;
-import task1.factory.PersonDao;
+import task1.dao.PersonDao;
 
 /**
  * Created by Kiryl_Parfiankou on 12/14/2015.
