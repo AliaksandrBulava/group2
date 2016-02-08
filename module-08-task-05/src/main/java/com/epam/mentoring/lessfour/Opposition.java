@@ -12,15 +12,22 @@ public class Opposition {
         private int count = 10;
 
         public void increment() {
-            count++;
+            synchronized(this) {
+                this.notifyAll();
+                count++;
+            }
         }
 
         public void decrement() {
-            count--;
+            synchronized(this) {
+                count--;
+            }
         }
 
         public int get() {
-            return count;
+            synchronized(this) {
+                return count;
+            }
         }
 
     }
@@ -45,7 +52,16 @@ public class Opposition {
                 if (increment) {
                     counter.increment();
                 } else {
-                    counter.decrement();
+                    synchronized (counter) {
+                        while (counter.get() <= 0) {
+                            try {
+                                counter.wait();
+                            } catch (InterruptedException e) {
+                                // do nothing
+                            }
+                        }
+                        counter.decrement();
+                    }
                 }
 
                 int x = counter.get();
@@ -89,5 +105,4 @@ public class Opposition {
         }
         System.out.println("Finished");
     }
-
 }
