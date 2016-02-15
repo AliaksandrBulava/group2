@@ -33,7 +33,9 @@ public class Runner {
                 }
 
                 for(int i = 0; i < line.length(); i+=3) {
-                    lineList.add(line.substring(i,i+3));
+                    char[] subLine = new char[3];
+                    line.getChars(i, i+3, subLine, 0);
+                    lineList.add(new String(subLine));
                 }
                 Thread.sleep(5);
                 System.out.println("Line list size: " + lineList.size());
