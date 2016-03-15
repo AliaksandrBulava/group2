@@ -5,4 +5,5 @@ include 'dao'
 findProject(':dao')?.name = 'module-11-dao'
 include 'business'
 findProject(':business')?.name = 'module-11-business'
+include 'web'
 

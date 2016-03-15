@@ -1,0 +1,27 @@
+group 'by.jmp'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'war'
+apply plugin: "jetty"
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+    providedCompile 'javax.servlet:javax.servlet-api:3.0.1'
+
+
+    compile project(':module-11-business')
+}
+
+war {
+    webXml = file('src/main/webapp/WEB-INF/web.xml') // copies a file to WEB-INF/web.xml
+}
+
+httpPort = 8080
+stopPort = 9080
+stopKey = "stopKey"
