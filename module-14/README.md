@@ -32,12 +32,13 @@ Install SonarQube Plugin
 - MAVEN_HOME = path\to\maven
 ![](https://github.com/AliaksandrBulava/group2/blob/master/module-14/images/Capture-6.PNG?raw=true) 
 
-SonarQube
+##### SonarQube
 - Name = SonarQube
 - Server URL = http://localhost:9000
 - SonarQube account login = admin
 - SonarQube account password = admin
 ![](https://github.com/AliaksandrBulava/group2/blob/master/module-14/images/Capture-7.PNG?raw=true) 
+
 ##### SonarQube Runner
 - Name sonar-runner
 - SONAR_RUNNER_HOME path\to\sonar-runner
@@ -49,10 +50,12 @@ SonarQube
 - Repository URL = https://github.com/spring-projects/spring-petclinic   (In my case I used a local path to the cloned repository)
 
 ![](https://github.com/AliaksandrBulava/group2/blob/master/module-14/images/Capture-3.PNG?raw=true)
+
 ##### Build Triggers
 - Poll SCM = true (Is used to build was carried out after changes in the git repository.)
 - Schedule = "H/15 * * * *" (the frequency of possible builds)
 ![](https://github.com/AliaksandrBulava/group2/blob/master/module-14/images/Capture-4.PNG?raw=true)
+
 ##### Add 2 build setp:
 Execute Windows batch command
 - Command = mvn install
