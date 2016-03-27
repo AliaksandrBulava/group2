@@ -1,0 +1,5 @@
+rootProject.name = 'module-15-task-1'
+include 'dao'
+include 'rest-api'
+include 'client'
+
