@@ -16,13 +16,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class ProposalServiceImpl implements ProposalService {
 
-    @Autowired
+
     private final ProposalRepository repository;
-    
+
+    @Autowired
     private SellerService sellerService;
-    
+
+    @Autowired
     private ProductService productService;
-    
+
+    @Autowired
     public ProposalServiceImpl(ProposalRepository repository) {
         super();
         this.repository = repository;

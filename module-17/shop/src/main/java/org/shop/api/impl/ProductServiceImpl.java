@@ -7,13 +7,14 @@ import org.shop.data.Product;
 import org.shop.repository.ProductRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class ProductServiceImpl implements ProductService {
 
-    @Autowired
     private final ProductRepository repository;
 
+    @Autowired
     public ProductServiceImpl(ProductRepository repository) {
         super();
         this.repository = repository;

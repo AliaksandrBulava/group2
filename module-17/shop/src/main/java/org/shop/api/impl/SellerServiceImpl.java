@@ -7,8 +7,9 @@ import org.shop.data.Seller;
 import org.shop.repository.SellerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class SellerServiceImpl implements SellerService {
 
     @Autowired
