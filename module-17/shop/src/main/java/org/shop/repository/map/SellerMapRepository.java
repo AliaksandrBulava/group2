@@ -5,7 +5,9 @@ import java.util.List;
 
 import org.shop.data.Seller;
 import org.shop.repository.SellerRepository;
+import org.springframework.stereotype.Component;
 
+@Component
 public final class SellerMapRepository extends AbstractMapRepository<Seller> implements SellerRepository {
     
     /* (non-Javadoc)
