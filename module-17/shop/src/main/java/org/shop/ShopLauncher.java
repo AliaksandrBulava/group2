@@ -1,6 +1,10 @@
 package org.shop;
 
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+import java.applet.AppletContext;
+
 /**
  * The ShopLauncher class.
  */
@@ -12,6 +16,6 @@ public class ShopLauncher {
      * @param args the arguments
      */
     public static void main(String[] args) {
-        //TODO: implement using Spring Framework ApplicationContext
+        //AppletContext appletContext = new ClassPathXmlApplicationContext("context.xml");
     }
 }
