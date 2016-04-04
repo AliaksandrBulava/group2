@@ -5,9 +5,9 @@ import java.util.List;
 import org.apache.commons.collections.Predicate;
 import org.shop.data.Item;
 import org.shop.repository.ItemRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public class ItemMapRepository extends AbstractMapRepository<Item> implements ItemRepository {
 
     /* (non-Javadoc)
