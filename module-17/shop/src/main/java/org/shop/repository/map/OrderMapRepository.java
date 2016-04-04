@@ -13,7 +13,7 @@ import org.springframework.stereotype.Repository;
  * 
  * @author Dzmitry_Naskou
  */
-@Repository
+@Repository("orderRepository")
 public class OrderMapRepository extends AbstractMapRepository<Order> implements OrderRepository {
 
     @Value("${repository.order.pk}")
