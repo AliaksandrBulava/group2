@@ -10,9 +10,13 @@ import org.shop.data.Proposal;
 import org.shop.data.Seller;
 import org.shop.data.State;
 import org.shop.repository.ProposalRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class ProposalServiceImpl implements ProposalService {
 
+    @Autowired
     private final ProposalRepository repository;
     
     private SellerService sellerService;

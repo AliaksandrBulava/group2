@@ -5,7 +5,9 @@ import java.util.List;
 import org.shop.api.UserService;
 import org.shop.data.User;
 import org.shop.repository.UserRepository;
+import org.springframework.stereotype.Component;
 
+@Component
 public class UserServiceImpl implements UserService {
 
     private UserRepository repository;
