@@ -7,6 +7,7 @@ import java.util.Map;
 
 import org.shop.api.SellerService;
 import org.shop.data.Seller;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
@@ -18,6 +19,7 @@ import javax.annotation.Resource;
 public class SellerInitializer {
 
     /** The seller service. */
+    @Autowired
     private SellerService sellerService;
     
     /** The seller names. */

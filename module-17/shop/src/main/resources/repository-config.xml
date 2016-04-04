@@ -7,6 +7,8 @@
 
     <context:annotation-config />
 
+    <context:property-placeholder location="classpath:shop.properties"/>
+
     <context:component-scan base-package="org.shop.repository.map"/>
 
 </beans>

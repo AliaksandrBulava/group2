@@ -9,4 +9,6 @@
 
     <import resource="classpath:data-initializer.xml"/>
 
+    <alias name="UserServiceImpl" alias="UserSv"/>
+
 </beans>
