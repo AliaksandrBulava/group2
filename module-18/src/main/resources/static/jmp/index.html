@@ -1,0 +1,38 @@
+<!doctyle html>
+<html>
+	<head>
+		<title>Module 18</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	</head>
+	<script>
+		$(document).ready(function(){
+            $("#projectForm").submit(function(e) {
+            	e.preventDefault();
+            	var data = {
+            		name : "test"	
+            	}
+            	$.ajax({
+            		type : "POST",
+            		url : "http://localhost:8080/projects",
+            		headers: {
+            			"Access-Control-Allow-Origin": "*"
+            	    },
+            		data : data,
+            		dataType: 'json',
+            		success : function(data) {
+            			console.log(data);
+            		}
+            	});
+            });
+    	});
+	</script>
+	<body>
+		<h2>Project<h2>
+		<form id="projectForm">
+			Name: <input type="text" name="name">
+			<input id="sendProject" type="submit" value="Submit">
+		</form>
+	</body>
+</html>
