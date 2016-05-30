@@ -1,0 +1,9 @@
+rootProject.name = 'module-11-task-1'
+include 'console'
+findProject(':console')?.name = 'module-11-console'
+include 'dao'
+findProject(':dao')?.name = 'module-11-dao'
+include 'business'
+findProject(':business')?.name = 'module-11-business'
+include 'web'
+

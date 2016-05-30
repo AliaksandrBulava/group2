@@ -1,0 +1,21 @@
+{
+  "name": "module-13",
+  "authors": [
+    "Kiryl Parfiankou <Kiryl_Parfiankou@epam.com>"
+  ],
+  "description": "Apache + Tomcat JMP module",
+  "main": "",
+  "moduleType": [],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1"
+  }
+}

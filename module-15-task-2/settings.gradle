@@ -1,0 +1,3 @@
+rootProject.name = 'module-15-task-2'
+include 'soap-api'
+

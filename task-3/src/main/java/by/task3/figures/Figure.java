@@ -1,0 +1,7 @@
+package by.task3.figures;
+
+/**
+ * Created by Kiryl_Parfiankou on 11/30/2015.
+ */
+public interface Figure {
+}
